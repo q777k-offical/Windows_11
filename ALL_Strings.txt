@@ -1,7 +1,8 @@
-Win11 24H2
+Win11 23H2+
 
 Description:
 * - These parads exist, but of them do not have a symbol on W11 24H2
+^ - on W11 24H2+
 ! - They have a symbol but does nothing
 ... - I will update the lines soon
 
@@ -212,7 +213,6 @@ ResourceEnforceOwnerTransfer - def 0
 CriticalSectionTimeout - def 278d00
 HeapSegmentReserve - def 100000
 HeapSegmentCommit - def 2000
-HiberbootEnabled - def 1
 HeapDeCommitTotalFreeThreshold - def 10000
 HeapDeCommitFreeBlockThreshold - def 1000
 PowerPolicySimulate - def 0
@@ -284,7 +284,7 @@ HeteroMultiClassParkingEnabled - def ffffffff
 AlwaysComputeQosHints - def 0
 ExperimentalClusterIdleMitigation - def 0
 EnforceDisconnectedStandby - def 0
-EnforceAusterityMode - def 0
+^ EnforceAusterityMode - def 0
 UserBatteryDischargeEstimator - def 0
 UserBatteryChargeEstimator - def 0
 StandbyConnectivityGracePeriod - def 0
@@ -327,7 +327,7 @@ SleepstudyLibraryBlockerLimit - def c8
 SleepstudyGlobalBlockerLimit - def bb8
 DisableVsyncLatencyUpdate - def 0
 ExitLatencyCheckEnabled - def 1
-EnergyEstimationEnabled - def 0
+EnergyEstimationEnabled - def 1
 CheckPowerSourceAfterRtcWakeTime - def 1e
 DripsSwHwDivergenceThreshold - def 10e
 DripsSwHwDivergenceEnableLiveDump - def 0
@@ -517,14 +517,7 @@ Other Strings LSA:
 MACHINE\System\CurrentControlSet\Control\Lsa
 RestrictAnonymousSAM - def 1
 RestrictAnonymous - def 0
-NoLMHash - def 0
-
-Policies System:
-MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System
-LegalNoticeText - null
-LegalNoticeCaption - null
-ConsentPromptBehavior - def 1
-EnableLUA - def 1
+NoLMHash - def 1
 
 Windows Defender:
 SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\AppHost
@@ -537,11 +530,16 @@ Enabled - def 1
 
 Windows main:
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
+ProcessDCEsInUseThreshold - def 1
 DCEInUseTelemetryDisabled - def 0
-*GlobalDCEsInUseThreshold
-*ProcessDCEsInUseThreshold
-*RimObserverQueueSize
 DesktopHeapLogging - def 1
+TimerCoalescing - ...
+DisableTimeThreshold - def 60000
+
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\Input\DelayZonePalmRejection
+RejectionEnabled - def 1
+DelayZonePalmRejectionThresholdMS - def 175
+DelayZonePalmRejectionExtensionSizeDips - def 250
 
 Mouse Tweaks:
 HKEY_CURRENT_USER\Control Panel\Mouse
