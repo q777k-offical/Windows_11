@@ -553,6 +553,8 @@ DisableProjectedShadowsRendering - def 0
 DisableProjectedShadows - def 0
 DisableIndependentFlip - def 0
 DisableAdvancedDirectFlip - def 0
+OverlayMinFPS - def f (15)
+OverlayTestMode - def 2
 
 ======================================
 
