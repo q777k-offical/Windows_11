@@ -548,6 +548,12 @@ RawMouseThrottleEnabled — def 1
 RawMouseThrottleForced — def 0
 RawMouseThrottleLeeway — def 5
 
+\Registry\Machine\SOFTWARE\Microsoft\WINDOWS\DWM
+DisableProjectedShadowsRendering - def 0
+DisableProjectedShadows - def 0
+DisableIndependentFlip - def 0
+DisableAdvancedDirectFlip - def 0
+
 ======================================
 
 NDIS PARAMERTS:
