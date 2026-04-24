@@ -226,6 +226,7 @@ PowerSimulateHiberBugcheck - def 0
 InitConsoleFlags - def 0
 MultiUsersInSessionSupported - def 0
 DisableIFEOCaching - def 0
+DisableWpbtExecution - def 0
 
 HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Quota System:
 JobTimeLimitsPeriodSeconds - def 7
