@@ -1,4 +1,4 @@
-^ - above
+^ - above, pw - preview branch, rs - release branch.
 
 (26100/200.8313^):
 
