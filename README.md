@@ -1,3 +1,11 @@
+# NAVIGATION
+
+[Known Fixed Problems in Windows Updates Patch](./known_fixed_problems.md)
+
+[ALL Strings Windows 11 23H2^](./ALL_Strings.txt)
+
+---
+
 >[!CAUTION]
 ># Disclaimer
 
@@ -8,4 +16,5 @@
 # Information
 strings - a data type whose values ​​are an arbitrary sequence (string) of the symbols of the alphabet. Each variable of this type (string variable) can be represented by a fixed amount of bytes or have arbitrary length.
 
-author: iiiexoiii_undead, q777k
+# Credits
+iiiexoiii_undead, q777k
