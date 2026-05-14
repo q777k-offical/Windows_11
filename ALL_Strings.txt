@@ -557,6 +557,17 @@ DisableAdvancedDirectFlip - def 0
 OverlayMinFPS - def f (15)
 OverlayTestMode - def 2
 
+HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting
+Disabled - def 0
+DontSendAdditionalData - def 0
+LoggingDisabled - def 0
+DisableArchive - def 0
+DisableWerUpload - def 0
+
+HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting\Consent
+DefaultConsent - 0
+DefaultOverrideBehavior - 0
+
 ======================================
 
 NDIS PARAMERTS:
