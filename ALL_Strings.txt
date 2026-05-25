@@ -28,9 +28,9 @@ MaximumCooperativeIdleSearchWidth - def 10
 AdjustDpcThreshold - def 14 
 PassiveWatchdogTimeout - def 12C
 SchedulerAssistThreadFlagOverride - def 0
-SerializeTimerExpiration - def 1
+SerializeTimerExpiration - def 0 (1-2 dwords, but if is setted to 0, its replace to 1)
 GlobalTimerResolutionRequests - def 0
-DisableLowQosTimerResolution 1
+DisableLowQosTimerResolution - def 1
 EnablePerCpuClockTickScheduling - def 0
 EnableTickAccumulationFromAccountingPeriods - def 0
 DisableTsx - def 0
@@ -529,7 +529,7 @@ PreventOverride - def 1
 SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost\EnableWebContentEvaluation
 Enabled - def 1
 
-Windows main:
+Windows NT main:
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
 ProcessDCEsInUseThreshold - def 1
 DCEInUseTelemetryDisabled - def 0
@@ -573,37 +573,38 @@ DefaultOverrideBehavior - 0
 NDIS PARAMERTS:
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : AllowFlowControlUnderDebugger - def e8000000
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : AllowWakeFromS5  - def 40000000
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : AOACTestOverride - def 00000000
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DebugLoggingMode - def 00000001
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DefaultPnPCapabilities - def 00000000
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DirectedMacForNapsEnabled - def 00000001
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DisableNaps - def 00000000
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DisableNDISWatchDog - def 00000000
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DisableReenumerationTimeoutBugcheck - def 00000001
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DisableWDIWatchdogForceBugcheck - def 00000001
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : EnableNicAutoPowerSaverInSleepStudy - def 00000000
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : EnableScreenOnNaps - def 00000000
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : ImplicitPowerRefManagement - def 00000000
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : LeakedNblReaction - def 00000005
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : MaxCachedNblContextSize - def 00000400
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : AOACTestOverride - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DebugLoggingMode - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DefaultPnPCapabilities - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DirectedMacForNapsEnabled - def 1
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DisableNaps - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DisableNDISWatchDog - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DisableReenumerationTimeoutBugcheck - def 1
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DisableWDIWatchdogForceBugcheck - def 1
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : EnableNicAutoPowerSaverInSleepStudy - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : EnableScreenOnNaps - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : ImplicitPowerRefManagement - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : LeakedNblReaction - def 5
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : MaxCachedNblContextSize - def 400
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : MaxNumRssCpus - def = The number of cores your processor
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NblTimeoutMs - def 0000ea60
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NblTrackerHistorySize - def 00000000
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NicQuietDerefDefaultTimeoutMs - def 00000064
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NicQuietDerefExtendedTimeoutMs - def 000003e8
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NicQuietInitTimeoutMs - def 00007530
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NicQuietWakeTimeoutMs - def 000003e8
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NoPauseOnSuspend - def 00000001
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PacketStackSize - def 00000002
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PadShortPackets - def 00000000
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PortAuthReceiveAuthorizationState - def 00000002
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PortAuthReceiveControlState - def 00000002
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PortAuthSendAuthorizationState - def 00000002
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PortAuthSendControlState - def 00000002
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NblTimeoutMs - def ea60
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NblTrackerHistorySize - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NicQuietDerefDefaultTimeoutMs - def 64
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NicQuietDerefExtendedTimeoutMs - def 3e8
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NicQuietInitTimeoutMs - def 7530
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NicQuietWakeTimeoutMs - def 3e8
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NoPauseOnSuspend - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PacketStackSize - def 2
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PadShortPackets - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PortAuthReceiveAuthorizationState - def 2
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PortAuthReceiveControlState - def 2
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PortAuthSendAuthorizationState - def 2
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PortAuthSendControlState - def 2
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : ReceiveWorkerDisableAutoStart - def 0
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : ReceiveWorkerThreadPriority - def 00000008
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : ReceiveWorkerThreadPriority - def 8
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : RssBaseCpu - def 0
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : SriovSupportTestOverride - def 00000000
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : StartDeviceSync - def 00400000
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : StuckNblReaction - def 00000002
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : TrackNblOwner - def 00000002
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : SriovSupportTestOverride - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : StartDeviceSync - def 400000
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : StuckNblReaction - def 2
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : TrackNblOwner - def 2
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\SHAREDSTATE : EnableNicAutoPowerSaverInSleepStudy - def 0
