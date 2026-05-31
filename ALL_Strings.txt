@@ -379,7 +379,7 @@ ExternalDiagnosticsBufferMultiplier - def 0
 ExternalDiagnosticsBufferSize - def 0
 ForceBddFallbackOnly - def 0
 ForceUsb4MonitorSupport - def 0
-HwSchMode - def 2
+HwSchMode - def 1 (1 - disable HAGS / 2 - enable HAGS)
 HwSchOverrideBlockList - def 1
 HwSchTreatExperimentalAsStable - def 0
 InternalDiagnosticsBufferMultiplier - def 0
