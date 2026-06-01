@@ -553,7 +553,12 @@ RawMouseThrottleEnabled — def 1
 RawMouseThrottleForced — def 0
 RawMouseThrottleLeeway — def 5
 
-\Registry\Machine\SOFTWARE\Microsoft\WINDOWS\DWM
+Registry\MACHINE\SYSTEM\CurrentControlSet\Control\usbflags
+Allow64KLowOrFullSpeedControlTransfers - 0
+DisableHCS0Idle - 0
+
+DWM Tweaks:
+Registry\Machine\SOFTWARE\Microsoft\WINDOWS\DWM
 DisableProjectedShadowsRendering - def 0
 DisableProjectedShadows - def 0
 DisableIndependentFlip - def 0
