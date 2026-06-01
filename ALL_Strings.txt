@@ -8,7 +8,7 @@ Description:
 
 Start Strings:
 NTOSKRNL PARAMERTS:
-HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel:
+Registry\MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel:
 DriveRemappingMitigation - def 1
 DPCTimeout - def 4e20
 DpcSoftTimeout - def 4e20
@@ -97,10 +97,10 @@ XStateContextLookasidePerProcMaxDepth​​​​​​​ - def 0
 IdealNodeRandomized​​​​​​​ - def 1
 ForceParkingRequested​​​​​​​ - def 1
 
-HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel\RNG:
+Registry\MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel\RNG:
 RNGAuxiliarySeed - def ???
 
-HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management: 
+Registry\MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management: 
 PagedPoolQuota - def ffffffff
 NonPagedPoolQuota - def ffffffff
 PagingFileQuota - def ffffffff
@@ -175,7 +175,7 @@ AllowUserHotPatchWithoutVbs - def 0
 SpecialPurposeMemoryStartPage - def 0
 SpecialPurposeMemoryPages - def 0
 
-HKLM\CurrentControlSet\Control\Session Manager\Power:
+Registry\MACHINE\CurrentControlSet\Control\Session Manager\Power:
 SleepStudyDisabled - def 0
 SleepStudyDeviceAccountingLevel - def 4
 WatchdogSleepTimeout - def 12c
@@ -185,12 +185,12 @@ FlushPolicy - def 0
 Win32CalloutWatchdogBugcheckEnabled - def 0
 SkipTickOverride - def 1
 
-HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\I/O System:
+Registry\MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\I/O System:
 RequireDeviceAccessCheck - def 1
 IoAllowLoadCrashDumpDriver - def 0
 DisableDiskCounters - def 0
 
-HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive:
+Registry\MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive:
 AdditionalCriticalWorkerThreads - def 0
 AdditionalDelayedWorkerThreads - def 0
 MaximumKernelWorkerThreads - def 1000
@@ -200,7 +200,7 @@ WorkerFactoryThreadCreationTimeout - def a
 WorkerFactoryThreadIdleTimeout - def 43
 ForceEnableMutantAutoboost - def 0
 
-HKLM\SYSTEM\CurrentControlSet\Control\Session Manager:
+Registry\MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager:
 ProtectionMode - def 1
 ObjectSecurityMode - def 1
 GlobalFlag - def 40
@@ -228,12 +228,12 @@ MultiUsersInSessionSupported - def 0
 DisableIFEOCaching - def 0
 DisableWpbtExecution - def 0
 
-HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Quota System:
+Registry\MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Quota System:
 JobTimeLimitsPeriodSeconds - def 7
 ApplicationBlockedMessageLimit - def 32
 SystemBlockedMessageLimit - def c8
 
-HKLM\SYSTEM\CurrentControlSet\Control\Power :
+Registry\MACHINE\SYSTEM\CurrentControlSet\Control\Power :
 MaximumFrequencyOverride - def 0
 HibernateEnabledDefault - def 1
 HibernateBootOptimizationEnabled - def 0
@@ -350,15 +350,15 @@ PoFxSystemIrpWaitForReportDevicePowered - def 0
 DisableDisplayBurstOnPowerSourceChange - def 0
 DisableInboxPepGeneratedConstraints - def ffffffff
 
-HKLM\SYSTEM\CurrentControlSet\Control\Power\ModernSleep:
+Registry\MACHINE\SYSTEM\CurrentControlSet\Control\Power\ModernSleep:
 EnabledActions - def 0
 EnableDsNetRefresh - def 0
 
-HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling:
+Registry\MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling:
 PowerThrottlingOff - def 0
 ​
 DXGKRNL PARAMERTS:
-HKLM\SYSTEM\ControlSet001\Control\GraphicsDrivers:
+Registry\MACHINE\SYSTEM\ControlSet001\Control\GraphicsDrivers:
 MiracastForceDisable - def 2
 MiracastUseIhvDriver - def 2
 DisableVaBackedVm - def 0
@@ -370,7 +370,7 @@ VirtualGpuOnly - def 0
 TdrDelay - def 2
 AllowAdvancedEtwLogging - def 0
 DiagnosticsBufferExpansionTime - def 300
-EnableAcmSupportDeveloperPreview def ???
+EnableAcmSupportDeveloperPreview - def ???
 EnableFuzzing - def 0
 EnableHMDTestMode - def 0
 EnableIgnoreWin32ProcessStatus - def 0
@@ -394,7 +394,7 @@ PreserveFirmwareMode - def 0
 PreventFullscreenWireFormatChange - def 0
 RapidHpdMaxChainInMilliseconds - def 15000
 RapidHpdTimeoutInMilliseconds - def 5000
-SupportMultipleIntegratedDisplays
+SupportMultipleIntegratedDisplays - ???
 SuspendAdapterTimerPeriod - def 500000
 TdrDdiDelay - def 5
 TdrDebugMode - def 2
@@ -405,7 +405,7 @@ TdrLimitCount - def 5
 TdrLimitTime - def 0000003C
 TerminationListSizeLimit - def 04000000
 TreatUsb4MonitorAsNormal - def 0
-UnsupportedMonitorModesAllowed
+UnsupportedMonitorModesAllowed - def 1
 Usb4MonitorDpcdDP_IN_Adapter_Number - def 0
 Usb4MonitorDpcdUSB4_Driver_ID - def 0
 Usb4MonitorPowerOnDelayInSeconds - def 0
@@ -471,13 +471,13 @@ RapidHPDTime - def 1000
 *DefaultExternalSdrWhiteLevel
 *OutputDuplicationSessionApplicationLimit
 
-HKLM\SYSTEM\ControlSet001\Control\GraphicsDrivers\BasicDisplay:
+Registry\MACHINE\SYSTEM\ControlSet001\Control\GraphicsDrivers\BasicDisplay:
 *DisableBasicDisplayFallback
 *EnableBasicDisplayFallback
 ForcePreserveBootDisplay - def 0
 
 Not read by the system, but by the CSRSS process:
-HKLM\SYSTEM\ControlSet001\Control\GraphicsDrivers\Scheduler:
+Registry\MACHINE\SYSTEM\ControlSet001\Control\GraphicsDrivers\Scheduler:
 AdjustWorkerThreadPriority - def 1
 AudioDgAutoBoostPriority - def 24
 AutoSyncToCPUPriority - def 1
@@ -515,35 +515,39 @@ VSyncIdleTimeout - def 1
 YieldPercentage - def 10​​​​​​​
 
 Other Strings LSA:
-MACHINE\System\CurrentControlSet\Control\Lsa
+Registry\MACHINE\System\CurrentControlSet\Control\Lsa
 RestrictAnonymousSAM - def 1
 RestrictAnonymous - def 0
 NoLMHash - def 1
 
 Windows Defender:
-SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\AppHost
+Registry\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\AppHost
 EnableWebContentEvaluation - def 1
 PreventOverride - def 1
 
 //alternative key:
-SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost\EnableWebContentEvaluation
+Registry\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost\EnableWebContentEvaluation
 Enabled - def 1
 
 Windows NT main:
-HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
+Registry\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
 ProcessDCEsInUseThreshold - def 1
 DCEInUseTelemetryDisabled - def 0
 DesktopHeapLogging - def 1
 TimerCoalescing - ...
 DisableTimeThreshold - def 60000
 
-HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\Input\DelayZonePalmRejection
-RejectionEnabled - def 1
+Registry\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\Input\DelayZonePalmRejection
+RejectionEnabled - def 0
 DelayZonePalmRejectionThresholdMS - def 175
 DelayZonePalmRejectionExtensionSizeDips - def 250
 
+Registry\MACHINE\SYSTEM\CurrentControlSet\Control\Wdf
+WdfGlobalLogsDisabled - def 0
+WdfGlobalSleepStudyDisabled - def 0
+
 Mouse Tweaks:
-HKEY_CURRENT_USER\Control Panel\Mouse
+Registry\USER\Control Panel\Mouse
 RawMouseThrottleDuration — min 0x8, max: 0x14
 RawMouseThrottleEnabled — def 1
 RawMouseThrottleForced — def 0
@@ -557,14 +561,14 @@ DisableAdvancedDirectFlip - def 0
 OverlayMinFPS - def f (15)
 OverlayTestMode - def 2
 
-HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting
+Registry\MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting
 Disabled - def 0
 DontSendAdditionalData - def 0
 LoggingDisabled - def 0
 DisableArchive - def 0
 DisableWerUpload - def 0
 
-HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting\Consent
+Registry\MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting\Consent
 DefaultConsent - 0
 DefaultOverrideBehavior - 0
 
@@ -575,7 +579,7 @@ Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : AllowFlowContro
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : AllowWakeFromS5  - def 40000000
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : AOACTestOverride - def 0
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DebugLoggingMode - def 0
-Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DefaultPnPCapabilities - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DefaultPnPCapabilities - def 0 (18 is disables)
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DirectedMacForNapsEnabled - def 1
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DisableNaps - def 0
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DisableNDISWatchDog - def 0
