@@ -532,6 +532,8 @@ Enabled - def 1
 Windows NT main:
 Registry\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
 ProcessDCEsInUseThreshold - def 1
+GDIEnableReferenceStackTraces - ???
+GDICaptureStackTraceForObjectType - ???
 DCEInUseTelemetryDisabled - def 0
 DesktopHeapLogging - def 1
 TimerCoalescing - ...
