@@ -538,7 +538,7 @@ TimerCoalescing - ...
 DisableTimeThreshold - def 60000
 
 Registry\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\Input\DelayZonePalmRejection
-RejectionEnabled - def 0
+RejectionEnabled - def 1
 DelayZonePalmRejectionThresholdMS - def 175
 DelayZonePalmRejectionExtensionSizeDips - def 250
 
