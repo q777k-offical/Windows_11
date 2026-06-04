@@ -541,7 +541,11 @@ GDIEnableReferenceStackTraces - ???
 GDICaptureStackTraceForObjectType - ???
 DCEInUseTelemetryDisabled - def 0
 DesktopHeapLogging - def 1
-TimerCoalescing - ...
+IsVailContainer - def 0
+TimerCoalescing - def 7FFFFFF5u
+RITdemonTimerPowerSaveElapse - def 43200000
+RITdemonTimerPowerSaveCoalescing - def 43200000
+
 
 Registry\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\Input\DelayZonePalmRejection
 RejectionEnabled - def 1
