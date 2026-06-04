@@ -349,6 +349,11 @@ SkipHibernateMemoryMapValidation - def ffffffff
 PoFxSystemIrpWaitForReportDevicePowered - def 0
 DisableDisplayBurstOnPowerSourceChange - def 0
 DisableInboxPepGeneratedConstraints - def ffffffff
+PowerWatchdogDrvSetMonitorTimeoutMsec - def 80
+PowerWatchdogRequestQueueTimeoutMsec - def 30000
+PowerWatchdogPoCalloutTimeoutMsec - def 10000
+PowerWatchdogPowerOnGdiTimeoutMsec - def 30000
+PowerWatchdogDwmSyncFlushTimeoutMsec - def 30000
 
 Registry\MACHINE\SYSTEM\CurrentControlSet\Control\Power\ModernSleep:
 EnabledActions - def 0
