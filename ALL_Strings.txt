@@ -535,12 +535,12 @@ ProcessDCEsInUseThreshold - def 1
 DCEInUseTelemetryDisabled - def 0
 DesktopHeapLogging - def 1
 TimerCoalescing - ...
-DisableTimeThreshold - def 60000
 
 Registry\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\Input\DelayZonePalmRejection
 RejectionEnabled - def 1
 DelayZonePalmRejectionThresholdMS - def 175
 DelayZonePalmRejectionExtensionSizeDips - def 250
+DisableTimeThreshold - def 60000
 
 Registry\MACHINE\SYSTEM\CurrentControlSet\Control\Wdf
 WdfGlobalLogsDisabled - def 0
