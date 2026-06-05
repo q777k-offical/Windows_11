@@ -34,7 +34,7 @@ DisableLowQosTimerResolution - def 1
 EnablePerCpuClockTickScheduling - def 0
 EnableTickAccumulationFromAccountingPeriods - def 0
 DisableTsx - def 0
-VpThreadSystemWorkPriority - 1E
+VpThreadSystemWorkPriority - def 1E
 PerfIsoEnabled - def 0
 CacheIsoBitmap - def 0
 IdealDpcRate - def 14
@@ -86,7 +86,7 @@ LongDpcRuntimeThreshold​​​​​​​ - def 64
 LongDpcQueueThreshold​​​​​​​ - def 3
 HgsPlusFeedbackUpdateThresholdRuntime​​​​​​​ - def 14
 HgsPlusFeedbackUpdateThresholdNetRuntim​​​​​​​e -  def 14
-HgsPlusInvalidFeedbackLimit​​​​​​​ - 32
+HgsPlusInvalidFeedbackLimit​​​​​​​ - def 32
 HgsPlusInvalidFeedbackDefaultClass​​​​​​​ - def 0
 HgsPlusLowerPerfClassFeedbackThreshold​​​​​​​ - def 0
 HgsPlusHigherPerfClassFeedbackThreshold​​​​​​​ - def 1
@@ -269,7 +269,7 @@ LatencyToleranceIdleResiliency - def 16e360
 LatencyToleranceSoftParked - def 0
 LatencyToleranceParked - def 0
 PerfIdealAggressiveIncreasePolicyThreshold - def 5a
-PerfSingleStepSize - 5
+PerfSingleStepSize - def 5
 PerfCalculateActualUtilization - def 1
 PerfArtificialDomain - def ffffffff
 MultiparkGranularity - def 8
@@ -546,7 +546,6 @@ TimerCoalescing - def 7FFFFFF5u
 RITdemonTimerPowerSaveElapse - def 43200000
 RITdemonTimerPowerSaveCoalescing - def 43200000
 
-
 Registry\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\Input\DelayZonePalmRejection
 RejectionEnabled - def 1
 DelayZonePalmRejectionThresholdMS - def 175
@@ -565,8 +564,8 @@ RawMouseThrottleForced — def 0
 RawMouseThrottleLeeway — def 5
 
 Registry\MACHINE\SYSTEM\CurrentControlSet\Control\usbflags
-Allow64KLowOrFullSpeedControlTransfers - 0
-DisableHCS0Idle - 0
+Allow64KLowOrFullSpeedControlTransfers - def 0
+DisableHCS0Idle - def 0
 
 DWM Tweaks:
 Registry\Machine\SOFTWARE\Microsoft\WINDOWS\DWM
@@ -585,8 +584,8 @@ DisableArchive - def 0
 DisableWerUpload - def 0
 
 Registry\MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting\Consent
-DefaultConsent - 0
-DefaultOverrideBehavior - 0
+DefaultConsent - def 0
+DefaultOverrideBehavior - def 0
 
 ======================================
 
