@@ -435,6 +435,7 @@ DisableMonitoredFenceGpuVa - def 0
 DisableMultiSourceMPOCheck - def 0
 DisableOverlays - def 0 (1 = you always get a COMPOSED FLIP instead of a HARDWARE INDEPENDENT FLIP when playing with the FSO)
 DisablePagingContextGpuVa - def 0
+DisableLddmSpriteTearDown - def 0
 DisableSecondaryIFlipSupport - def 0
 DriverManagesResidencyOverride - def 1
 DriverStoreCopyMode - def 1
@@ -586,6 +587,25 @@ DisableWerUpload - def 0
 Registry\MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting\Consent
 DefaultConsent - def 0
 DefaultOverrideBehavior - def 0
+
+Registry\MACHINE\SOFTWARE\Microsoft\Speech_OneCore
+ModelDownloadAllowed - def 1
+
+Registry\MACHINE\SOFTWARE\Microsoft\Speech_OneCore\Settings\OnlineSpeechPrivacy
+HasAccepted - def 1
+
+Registry\MACHINE\SOFTWARE\Microsoft\Speech_OneCore\Settings\OnlineSpeechLogging
+LoggingAllowed - def ?
+
+Registry\MACHINE\SOFTWARE\Policies\Microsoft\Speech
+AllowSpeechModelUpdate - def 1
+
+Registry\USER\Software\Microsoft\Speech_OneCore\Settings\VoiceActivation\UserPreferenceForAllApps
+AgentActivationEnabled - def 1
+AgentActivationOnLockScreenEnabled - def 1
+
+\Registry\Machine\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock
+AllowDevelopmentWithoutDevLicense - def 0
 
 ======================================
 
