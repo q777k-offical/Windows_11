@@ -543,7 +543,7 @@ GDICaptureStackTraceForObjectType - ???
 DCEInUseTelemetryDisabled - def 0
 DesktopHeapLogging - def 1
 IsVailContainer - def 0
-TimerCoalescing - def 7FFFFFF5u
+TimerCoalescing - def 7FFFFFF5
 RITdemonTimerPowerSaveElapse - def 43200000
 RITdemonTimerPowerSaveCoalescing - def 43200000
 
