@@ -649,5 +649,19 @@ Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : TrackNblOwner -
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\SHAREDSTATE : EnableNicAutoPowerSaverInSleepStudy - def 0
 
 NETBT PARAMERTS:
+Registry\Machine\SYSTEM\ControlSet001\Services\NETBT\PARAMETERS : BcastNameQueryCount - def 3
+Registry\Machine\SYSTEM\ControlSet001\Services\NETBT\PARAMETERS : BcastQueryTimeout - def 750
+Registry\Machine\SYSTEM\ControlSet001\Services\NETBT\PARAMETERS : CacheTimeout - def 927c0
 Registry\Machine\SYSTEM\ControlSet001\Services\NETBT\PARAMETERS : EnableLMHOSTS - def 1
-...
+Registry\Machine\SYSTEM\ControlSet001\Services\NETBT\PARAMETERS : NameServerPort - def 89
+Registry\Machine\SYSTEM\ControlSet001\Services\NETBT\PARAMETERS : NameSrvQueryCount - def 3
+Registry\Machine\SYSTEM\ControlSet001\Services\NETBT\PARAMETERS : NameSrvQueryTimeout - def 5dc
+Registry\Machine\SYSTEM\ControlSet001\Services\NETBT\PARAMETERS : SessionKeepAlive - def 36ee80
+Registry\Machine\SYSTEM\ControlSet001\Services\NETBT\PARAMETERS : UseNewSmb - def 1
+
+LANMANWORKSTATION PARAMERTS:
+Registry\Machine\SYSTEM\ControlSet001\Services\LanmanWorkstation\Parameters : DisableBandwidthThrottling - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\LanmanWorkstation\Parameters : AllowInsecureGuestAuth - def 1
+Registry\Machine\SYSTEM\ControlSet001\Services\LanmanWorkstation\Parameters : EnablePlainTextPassword - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\LanmanWorkstation\Parameters : EnableSecuritySignature - def 1
+Registry\Machine\SYSTEM\ControlSet001\Services\LanmanWorkstation\Parameters : RequireSecuritySignature - def 0
