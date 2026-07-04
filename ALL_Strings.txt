@@ -1,7 +1,7 @@
 Win11 23H2+
 
 Description:
-* - These parads exist, but of them do not have a symbol on W11 24H2
+* - These parads exist, but of do when system starts
 ^ - on W11 24H2+
 ! - They have a symbol but does nothing
 ... - I will update the lines soon
@@ -129,7 +129,7 @@ VerifierIrpStackTraces - def 4000
 VerifierHandleTraces - def 4000
 VerifierIrpTimeout - def 0
 VerifyDriverLevel - def ffffffff
-*VerifyDrivers
+!VerifyDrivers
 VerifierSettingState - def 0
 XdvVerifierOptions - def 0
 VerifyMode - def 4
@@ -407,8 +407,8 @@ TdrDodPresentDelay - def 2
 TdrDodVSyncDelay - def 2
 TdrLevel - def 3
 TdrLimitCount - def 5
-TdrLimitTime - def 0000003C
-TerminationListSizeLimit - def 04000000
+TdrLimitTime - def 3C
+TerminationListSizeLimit - def 4000000
 TreatUsb4MonitorAsNormal - def 0
 UnsupportedMonitorModesAllowed - def 1
 Usb4MonitorDpcdDP_IN_Adapter_Number - def 0
@@ -468,14 +468,14 @@ NumVirtualFunctions - def 0
 SmallQuantumMode - def 1
 DRTTestEnable - def 0
 EnableExperimentalRefreshRates - def 0
-*ForceEnableDWMClone
-*PageFaultDebugMode
-*RapidHPDThresholdCount
+!ForceEnableDWMClone
+!PageFaultDebugMode
+!RapidHPDThresholdCount
 RapidHPDTime - def 1000
-*CddBootImageMode
-*CddBootScreenMode
-*DefaultExternalSdrWhiteLevel
-*OutputDuplicationSessionApplicationLimit
+!CddBootImageMode
+!CddBootScreenMode
+!DefaultExternalSdrWhiteLevel
+!OutputDuplicationSessionApplicationLimit
 
 Registry\MACHINE\SYSTEM\ControlSet001\Control\GraphicsDrivers\BasicDisplay:
 *DisableBasicDisplayFallback
@@ -493,7 +493,7 @@ ContextSchedulingPenaltyDelay - def 1000
 CountFlipTowardHwLimit - def 0
 CountPresentTowardHwLimit - def 0
 DebugLargeSmoothenedDuration - def 1
-*EnableDirectSubmission
+!EnableDirectSubmission
 EnablePreemption - def 1
 FlipDoNotFlipMode - def 0
 ForceEnableFlipFenceModel - def 0
@@ -502,7 +502,7 @@ ForegroundPriorityBoost - def 1
 FrameServerAutoBoostPriority - def 17
 HistoryLogSize - def 64
 HwQueuedRenderPacketGroupLimit - def 2
-*HwQueuePacketCap
+!HwQueuePacketCap
 HwSchThreadOffloadMode - def 2
 MaxFocusGpuQuantumWithoutPresent - def 100 / 10
 MaximumAllowedPreemptionDelay - def 900
@@ -511,7 +511,7 @@ MinYieldInterval - def 8000
 NpuContextSwitchQuantum - def 30000
 NpuPreemptionQuantum - def 60000
 NumberOfDmaPacketPool - def 20
-*PerSourceCustomDuration
+!PerSourceCustomDuration
 PfnCpuOverride - def 0
 PreemptionQuantumUnit - def 50000
 ProfileLevel - def 2
@@ -538,8 +538,8 @@ Enabled - def 1
 Windows NT main:
 Registry\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
 ProcessDCEsInUseThreshold - def 1
-GDIEnableReferenceStackTraces - ???
-GDICaptureStackTraceForObjectType - ???
+*GDIEnableReferenceStackTraces
+*GDICaptureStackTraceForObjectType
 DCEInUseTelemetryDisabled - def 0
 DesktopHeapLogging - def 1
 IsVailContainer - def 0
@@ -647,3 +647,7 @@ Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : StartDeviceSync
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : StuckNblReaction - def 2
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : TrackNblOwner - def 2
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\SHAREDSTATE : EnableNicAutoPowerSaverInSleepStudy - def 0
+
+NETBT PARAMERTS:
+Registry\Machine\SYSTEM\ControlSet001\Services\NETBT\PARAMETERS : EnableLMHOSTS - def 1
+...
