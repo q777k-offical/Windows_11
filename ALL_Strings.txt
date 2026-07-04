@@ -548,7 +548,7 @@ RITdemonTimerPowerSaveElapse - def 43200000
 RITdemonTimerPowerSaveCoalescing - def 43200000
 
 Registry\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\Input\DelayZonePalmRejection
-RejectionEnabled - def 1
+RejectionEnabled - def 0 (1 value only on 26H1)
 DelayZonePalmRejectionThresholdMS - def 175
 DelayZonePalmRejectionExtensionSizeDips - def 250
 DisableTimeThreshold - def 60000
